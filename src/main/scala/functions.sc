@@ -30,6 +30,7 @@ def foo(n: Int) = {
     "zero"
 }
 
+
 // returns Unit, the expression sets the retval variable
 def bar() = {
   val retval = 2*3
