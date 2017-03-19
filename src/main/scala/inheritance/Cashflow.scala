@@ -1,4 +1,3 @@
-package inheritance
 
 import java.time.LocalDateTime
 

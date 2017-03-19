@@ -1,23 +1,14 @@
-package inheritance
 
 /**
   * Created by sheamusohalloran on 17/03/2017.
   */
-class Account(val balance: Double, val currency: String = "EUR") {
+abstract class Account(balance: Double, currency: String = "EUR") {
 
-  def deposit(amount: Double) = {
-    new Account(balance + amount)
-  }
+  def deposit(amount: Double);
 
-  def deposit(cashflow: Cashflow) = {
-    new Account(balance + cashflow.amount, cashflow.currency)
-  }
+  def deposit(cashflow: Cashflow);
 
-  def withdraw(amount: Double) = {
-    new Account(balance - amount)
-  }
+  def withdraw(amount: Double);
 
-  def withdraw(cashflow: Cashflow) = {
-    new Account(balance - cashflow.amount, cashflow.currency)
-  }
+  def withdraw(cashflow: Cashflow);
 }
