@@ -1,3 +1,5 @@
+import scala.annotation.tailrec
+
 // standard way
 val lst = List(1, 2, 3)
 
@@ -30,6 +32,7 @@ def matchList[T](lst: List[T]) = lst match {
 val l = List(1)
 matchList(l)
 
+@tailrec
 def printlist[T](lst: List[T]): Unit = lst match {
   case Nil => println("done")
   case h :: t =>
